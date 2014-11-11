@@ -2,4 +2,8 @@
 
 <p>Name: <%= @author.name %></p>
 
+<%= link_to "edit", edit_author_path(@author) %>
+
+<br>
+
 <%= link_to "back to all authors", authors_path %>
