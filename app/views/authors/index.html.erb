@@ -2,6 +2,6 @@
 
 <ul>
   <% @authors.each do |writer| %>
-  <li><%= writer.name %></li>
+  <li><%= link_to writer.name, writer %></li>
   <% end %>
 </ul>
