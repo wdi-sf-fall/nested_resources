@@ -17,6 +17,12 @@ class AuthorsController < ApplicationController
     redirect_to authors_path
   end
 
+  def destroy
+    author = Author.find(params[:id])
+    author.destroy
+    redirect_to authors_path
+  end
+
   private
   def get_author_params
     params.require(:author).permit(:name)

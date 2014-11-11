@@ -3,6 +3,8 @@
 <p>Name: <%= @author.name %></p>
 
 <%= link_to "edit", edit_author_path(@author) %>
+|
+<%= link_to "delete", @author, :method => :delete %>
 
 <br>
 
