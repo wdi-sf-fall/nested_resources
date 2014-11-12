@@ -2,6 +2,11 @@
 
 <p>Name: <%= @author.name %></p>
 
+<!-- LINK TO BOOKS -->
+<%= link_to "ALL BOOKS", author_books_path(@author) %>
+<br><br>
+<!-- END LINK TO BOOKS -->
+
 <%= link_to "edit", edit_author_path(@author) %>
 |
 <%= link_to "delete", @author, :method => :delete %>

@@ -1,2 +1,7 @@
-<h1>books#index</h1>
-<p>find me in views/books/index.html.erb</p>
+<h1><%= @author.name %></h1>
+
+<ul>
+  <% @author.books.each do |novel| %>
+  <li><%= link_to novel.title, author_book_path(@author, novel) %></li>
+  <% end %>
+</ul>
