@@ -1,2 +1,4 @@
 <h1><%= @book.title %></h1>
 <p>By: <%= @author.name %></p>
+
+<%= link_to "edit", edit_author_book_path(@author, @book) %>
